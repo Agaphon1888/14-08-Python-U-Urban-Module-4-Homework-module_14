@@ -26,7 +26,7 @@ cursor.execute('DELETE FROM Users')
 for i in range(1, 11):
     username = f'User{i}'
     email = f'example{i}@gmail.com'
-    age = random.randint(18, 99)  # Случайный возраст от 20 до 99
+    age = random.randint(18, 99)  # Случайный возраст от 18 до 99
     balance = 1000
     cursor.execute('''
     INSERT INTO Users (username, email, age, balance) VALUES (?, ?, ?, ?)
